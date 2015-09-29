@@ -1,3 +1,6 @@
+# Config with secret things in it
+src/constants/firebaseConfig.js
+
 # Logs
 logs
 *.log
@@ -21,6 +24,7 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+dist
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git

@@ -1,0 +1,29 @@
+{
+  "name": "ReactFireStarter",
+  "version": "1.0.0",
+  "description": "Starter project for a Firebase project with a React frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "browserify": "^11.2.0",
+    "firebase": "^2.3.0",
+    "foundation-sites": "^5.5.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-util": "^3.0.6",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "reactfire": "^0.5.0",
+    "reactify": "^1.1.1",
+    "toastr": "^2.1.2",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
