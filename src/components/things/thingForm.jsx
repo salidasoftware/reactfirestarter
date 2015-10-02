@@ -11,9 +11,15 @@ var ThingForm = React.createClass({
 		errors: React.PropTypes.object
 	},
 	render: function() {
+	
+		var title = "Add";
+		if(this.props.thing['.key']) {
+			title = "Manage"
+		}
+	
 		return (
 			<form>
-				<h1>Manage Thing</h1>
+				<h1>{title} Thing</h1>
 				
 				<Input
 					type="text"

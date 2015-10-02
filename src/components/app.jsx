@@ -11,7 +11,11 @@ var App = React.createClass({
 			<div>
 				<Header />
 				<div className="container-fluid">
-					<RouteHandler />
+					<div className="row">
+						<div className="large-12 columns">
+							<RouteHandler />
+						</div>
+					</div>
 				</div>
 			</div>
 		);

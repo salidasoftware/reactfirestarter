@@ -62,7 +62,7 @@ var LoginPage = React.createClass({
 					onLogin={this.login}
 					onChange={this.setCredentialsState}
 					errors={this.state.errors} />
-				<Link to="register" className="button">Register</Link>
+				<Link to="register" className="">Need to Register?</Link>
 			</div>
 		);
 	}

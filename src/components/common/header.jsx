@@ -3,6 +3,7 @@
 var React = require('react');
 var Router = require('react-router');
 var Link = Router.Link;
+var HeaderLink = require('./headerLink');
 var UserMixin = require('../../mixins/user');
 
 var Header = React.createClass({
@@ -13,30 +14,34 @@ var Header = React.createClass({
 		
 		var authLink;
 		if(this.state.authenticated) {
-			authLink = (<li><Link to="logout" className="button">Logout</Link></li>);
+			authLink = (<HeaderLink to="logout">Logout</HeaderLink>);
 		}
 		else {
-			authLink = (<li><Link to="login" className="button">Login</Link></li>);
+			authLink = (<HeaderLink to="login">Login</HeaderLink>);
 		}
 		
 		return (
 		
-			<div className="row">
-				<div className="large-3 columns">
-				<h1>
-					<Link to="app">
-						<img src="http://placehold.it/400x100&text=Logo" />
-					</Link>
-				</h1>
-				</div>
-				<div className="large-9 columns">
-				<ul className="button-group right">
-					<li><Link to="app" className="button">Home</Link></li>
-					<li><Link to="things" className="button">Things</Link></li>
-					{authLink}
+			<nav className="top-bar" data-topbar role="navigation">
+				<ul className="title-area">
+					<li className="name">
+						<h1><Link to="app">ReactFireStarter</Link></h1>
+					</li>
+					<li className="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 				</ul>
-				</div>
-			</div>
+				
+				<section className="top-bar-section">
+					<ul className="right">
+						<HeaderLink to="app">Home</HeaderLink>
+						<HeaderLink to="things">Things</HeaderLink>
+						{authLink}
+					</ul>
+					
+					<ul className="left">
+						
+					</ul>
+				</section>
+			</nav>
 		
 		);
 	}

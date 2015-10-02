@@ -1,6 +1,9 @@
 # Config with secret things in it
 src/constants/firebaseConfig.js
 
+# Since this is a starter project, igore firebase.json
+firebase.json
+
 # Logs
 logs
 *.log
